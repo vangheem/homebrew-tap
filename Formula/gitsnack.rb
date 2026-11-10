@@ -2,18 +2,18 @@
 class Gitsnack < Formula
   desc "Native GitHub pull request review app with opencode agent sessions"
   homepage "https://github.com/vangheem/gitsnack"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
-    url "https://github.com/vangheem/gitsnack/releases/download/v0.1.1/gitsnack-macos-universal.tar.gz"
-    sha256 "83c34e1f91f57f389f926103552b03a2583ced63d6b0413b377ccb53fc73aff3"
+    url "https://github.com/vangheem/gitsnack/releases/download/v0.2.0/gitsnack-macos-universal.tar.gz"
+    sha256 "7fa232dde4153c1e9399bda25e2a3dbf20865e3fe45118d594478c91f034409a"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/vangheem/gitsnack/releases/download/v0.1.1/gitsnack-linux-x86_64.tar.gz"
-      sha256 "3ea483e555d49677c217c31185bb4d5822b1735b9c7ff2f73e0c5e9e0834c4ce"
+      url "https://github.com/vangheem/gitsnack/releases/download/v0.2.0/gitsnack-linux-x86_64.tar.gz"
+      sha256 "5718b396481e2fdb1c790e5e7853e3669563cae7a05ef05be132b13a6ad865df"
     end
   end
 
@@ -27,6 +27,10 @@ class Gitsnack < Formula
     <<~EOS
       gitsnack uses the GitHub CLI; log in with `gh auth login` if you haven't.
       The agent panel needs opencode v2: https://opencode.ai
+
+      On macOS, add gitsnack to ~/Applications (Spotlight, Launchpad, Dock) with:
+        gitsnack install-app
+      gitsnack also offers to do this the first time you run it.
     EOS
   end
 
