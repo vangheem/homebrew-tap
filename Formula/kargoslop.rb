@@ -2,18 +2,18 @@
 class Kargoslop < Formula
   desc "Native desktop view of Kargo pipelines, Argo CD apps and their Kubernetes resources"
   homepage "https://github.com/vangheem/kargoslop"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/vangheem/kargoslop/releases/download/v0.2.0/kargoslop-macos-universal.tar.gz"
-    sha256 "c04b3faa15b8000fe9330e51dbc695212aa557397ec9068c7d758fb535bb55af"
+    url "https://github.com/vangheem/kargoslop/releases/download/v0.2.1/kargoslop-macos-universal.tar.gz"
+    sha256 "c44f506068f299546390cfd5ba39650f8d0d941d584768ea97a79a13e6b4a75e"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/vangheem/kargoslop/releases/download/v0.2.0/kargoslop-linux-x86_64.tar.gz"
-      sha256 "edd86132eb1738a4f03bdd32d5080fe8e0a50cff75679f33873b05804722923a"
+      url "https://github.com/vangheem/kargoslop/releases/download/v0.2.1/kargoslop-linux-x86_64.tar.gz"
+      sha256 "e6e147232a547f1c547088dbd3216e1183066576aea744be55eaa483d3f15402"
     end
   end
 
