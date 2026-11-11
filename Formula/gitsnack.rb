@@ -2,18 +2,18 @@
 class Gitsnack < Formula
   desc "Native GitHub pull request review app with opencode agent sessions"
   homepage "https://github.com/vangheem/gitsnack"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/vangheem/gitsnack/releases/download/v0.4.0/gitsnack-macos-universal.tar.gz"
-    sha256 "cc15270129af0f60984bedc286d2197213fe1b293538c2466b702948f15c2d02"
+    url "https://github.com/vangheem/gitsnack/releases/download/v0.4.1/gitsnack-macos-universal.tar.gz"
+    sha256 "903a1e34a84204ff41038f211bc19151e57a70262d80b3332ff7063f406dfe43"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/vangheem/gitsnack/releases/download/v0.4.0/gitsnack-linux-x86_64.tar.gz"
-      sha256 "194d1e8fb517a721c1816463ae7797e417958318bb950cdbdf1412652dae72ea"
+      url "https://github.com/vangheem/gitsnack/releases/download/v0.4.1/gitsnack-linux-x86_64.tar.gz"
+      sha256 "efc491eb004c73f47b5d7a659ac85b53734891860dc61c9dd99800bab78d2d8c"
     end
   end
 
