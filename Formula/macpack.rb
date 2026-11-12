@@ -2,9 +2,9 @@
 class Macpack < Formula
   desc "Move your Mac setup to a new Mac over an encrypted local connection"
   homepage "https://github.com/vangheem/macpack"
-  url "https://github.com/vangheem/macpack/releases/download/v0.2.0/macpack-macos-universal.tar.gz"
-  sha256 "e9da34fbaa7da4ad1f2b80059f6e7fe63d12b94e60c2d9c6b5c1184a7555deae"
-  version "0.2.0"
+  url "https://github.com/vangheem/macpack/releases/download/v0.3.0/macpack-macos-universal.tar.gz"
+  sha256 "346f2f7ef3ad6777b5d32a64764737f8db0f7bf55d6c6b804a8dfee3195ba872"
+  version "0.3.0"
   license "MIT"
 
   depends_on :macos
