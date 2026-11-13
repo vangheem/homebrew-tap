@@ -2,18 +2,18 @@
 class AwmCollector < Formula
   desc "Report local ActivityWatch data to awm-server"
   homepage "https://github.com/vangheem/activity-watch-manager"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/vangheem/activity-watch-manager/releases/download/v0.1.0/activity-watch-manager-macos-universal.tar.gz"
-    sha256 "d7ab2e08a5da986d1794b0505e3d0db985d164b51e38a9b791b088c3e2af5791"
+    url "https://github.com/vangheem/activity-watch-manager/releases/download/v0.1.1/activity-watch-manager-macos-universal.tar.gz"
+    sha256 "82632b6c82b09564a37fabfcc16239b0319ca0ad9cf398024c29ffa4ed9427e7"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/vangheem/activity-watch-manager/releases/download/v0.1.0/activity-watch-manager-linux-x86_64.tar.gz"
-      sha256 "619f9008bc0742da3099bcb45e93a33308dfbfb114156dcd533326965b3001bb"
+      url "https://github.com/vangheem/activity-watch-manager/releases/download/v0.1.1/activity-watch-manager-linux-x86_64.tar.gz"
+      sha256 "7781616684ee20d2e5502f4b0cc8f9728a0134a0714b3e90918083c2cf82c7ed"
     end
   end
 
