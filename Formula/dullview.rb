@@ -2,23 +2,37 @@
 class Dullview < Formula
   desc "Markdown slide decks with templates, PowerPoint import and live reload"
   homepage "https://github.com/vangheem/dullview"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
-    url "https://github.com/vangheem/dullview/releases/download/v0.1.0/dullview-macos-universal.tar.gz"
-    sha256 "b7b8f43a000c17ad15abcbaf4646b4147a34012dc15639be93ceaae5e474bf21"
+    url "https://github.com/vangheem/dullview/releases/download/v0.1.1/dullview-macos-universal.tar.gz"
+    sha256 "ad8569903eac066bc731e0a5f9a01ab0cd6cffe43fef57b7f480f223a6024e86"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/vangheem/dullview/releases/download/v0.1.0/dullview-linux-x86_64.tar.gz"
-      sha256 "e785dbb1fb9a87c5ffc634ab55b39685f8355c63bce26ad83ae1ad94df534397"
+      url "https://github.com/vangheem/dullview/releases/download/v0.1.1/dullview-linux-x86_64.tar.gz"
+      sha256 "baca093e5f4b48f343e0f9b536142b1921ced4ebc44c20f57863bcae5fdb0095"
     end
   end
 
   def install
     bin.install "dullview"
+  end
+
+  def post_install
+    # Adds dullview.app to ~/Applications. dullview also does this on its first run.
+    quiet_system bin/"dullview", "install-app" if OS.mac?
+  end
+
+  def caveats
+    <<~EOS
+      Run `dullview` (or open dullview.app) to pick a presentation, or `dullview path/to/deck`.
+      On macOS, dullview.app is added to ~/Applications; to redo or undo that:
+        dullview install-app
+        dullview uninstall-app
+    EOS
   end
 
   test do
